@@ -1,4 +1,3 @@
-```java
 package com.chatwatch;
 
 import net.fabricmc.loader.api.FabricLoader;
@@ -122,4 +121,3 @@ public final class ChatWatch {
         }
     }
 }
-```
