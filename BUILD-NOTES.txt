@@ -1,0 +1,8 @@
+ChatWatch - Minecraft 1.21.11 / Fabric / Java 21
+
+This folder includes a GitHub Actions workflow at:
+  .github/workflows/build.yml
+
+The workflow runs on pushes to main/master and can also be started manually from the repository's Actions tab. It installs Java 21 and Gradle 8.14.3, runs `gradle build --no-daemon`, and uploads build/libs/*.jar as the ChatWatch-Minecraft-1.21.11 artifact.
+
+Important: the full Fabric project has not been compiled in this environment. The first successful GitHub Actions run is required to verify API/mapping compatibility and produce an installable JAR. If the build fails, use the Actions log to identify and fix the compile errors.
